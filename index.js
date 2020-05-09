@@ -7,6 +7,7 @@ module.exports = {
     "airbnb",
     "plugin:react-hooks/recommended",
     "airbnb/hooks",
+    "airbnb/whitespace",
     "plugin:jsx-a11y/recommended",
     "react-app",
   ],
