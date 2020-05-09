@@ -18,7 +18,7 @@
     "eslint-plugin-standard": ">=2.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.0.0"
+    "eslint": "7.0.0"
   },
   "repository": "git@github.com:itsmelion/lion-lint.git",
   "author": {
