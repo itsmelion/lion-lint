@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-lion",
+  "version": "1.0.0",
+  "description": "Lion reusable lint config",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "eslint": ">=5.0.0",
+    "eslint-config-airbnb": ">=17.0.0",
+    "eslint-config-promise": ">=1.0.0",
+    "eslint-config-react": ">=1.0.0",
+    "eslint-config-standard": ">=14.0.0",
+    "eslint-plugin-import": ">=2.0.0",
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-promise": "*",
+    "eslint-plugin-react-hooks": ">=1.0.0",
+    "eslint-plugin-standard": ">=2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "repository": "git@github.com:itsmelion/lion-lint.git",
+  "author": {
+    "name": "Christhopher Lion",
+    "email": "christhopherlion@icloud.com",
+    "url": "https://lion.alia.ml/"
+  }
+}
