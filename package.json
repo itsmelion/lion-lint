@@ -6,6 +6,7 @@
   "license": "MIT",
   "private": false,
   "peerDependencies": {
+    "babel-eslint": ">=10",
     "eslint": ">=5.0.0",
     "eslint-config-airbnb": ">=17.0.0",
     "eslint-config-promise": ">=1.0.0",
