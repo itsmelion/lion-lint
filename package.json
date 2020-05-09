@@ -12,8 +12,8 @@
     "eslint-config-react": ">=1.0.0",
     "eslint-config-standard": ">=14.0.0",
     "eslint-plugin-import": ">=2.0.0",
-    "eslint-plugin-jsx-a11y": "*",
-    "eslint-plugin-promise": "*",
+    "eslint-plugin-jsx-a11y": ">=2.0.0",
+    "eslint-plugin-promise": ">=2.0.0",
     "eslint-plugin-react-hooks": ">=1.0.0",
     "eslint-plugin-standard": ">=2.0.0"
   },
