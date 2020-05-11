@@ -26,3 +26,8 @@ dont forget to extend `react-app`
   "extends": ["lion", "react-app"]
 ```
 and its dependencies: `eslint-plugin-flowtype` `eslint-config-react-app`
+
+### Using "React-Native" ?
+```json
+  "extends": ["lion/react-native"]
+```
