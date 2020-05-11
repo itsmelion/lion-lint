@@ -9,7 +9,6 @@ module.exports = {
     "airbnb/hooks",
     "airbnb/whitespace",
     "plugin:jsx-a11y/recommended",
-    "react-app",
   ],
   plugins: [
     "standard",
