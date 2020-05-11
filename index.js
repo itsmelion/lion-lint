@@ -50,9 +50,9 @@ module.exports = {
     }]
   },
   settings: {
-    "import/resolver": {
-      "node": { "paths": ["./src"] } },
-    },
+  "import/resolver": {
+    "node": { "paths": ["./src"] } },
+  },
   env: {
     // Mind that react-native doesnt fully implement browsers API.
     "browser": true,
