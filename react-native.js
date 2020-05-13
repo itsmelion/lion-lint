@@ -16,11 +16,15 @@ module.exports = {
         paths: ['./'],
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.native.js', '.web.js', '.ios.js', '.android.js'],
       },
-      alias: [
-        ['components', './components'],
-        ['app', './'],
-        ['src', './'],
-      ],
+      alias: {
+        map: [
+          ['assets', './assets'],
+          ['components', './components'],
+          ['app', './'],
+          ['src', './'],
+        ],
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
+      },
     },
   },
 };

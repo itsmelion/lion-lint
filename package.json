@@ -12,6 +12,7 @@
     "eslint-config-promise": ">=1.0.0",
     "eslint-config-react": ">=1.0.0",
     "eslint-config-standard": ">=14.0.0",
+    "eslint-import-resolver-alias": ">=1.0.0",
     "eslint-plugin-import": ">=2.0.0",
     "eslint-plugin-jsx-a11y": ">=2.0.0",
     "eslint-plugin-node": "^11.1.0",
