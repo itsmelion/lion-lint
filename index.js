@@ -44,10 +44,6 @@ module.exports = {
     "react/jsx-fragments": [2, "syntax"],
     "react/no-adjacent-inline-elements": 1,
     "react/no-danger": "error",
-    "react/function-component-definition": [1, {
-      "namedComponents": "arrow-function",
-      "unnamedComponents": "arrow-function",
-    }]
   },
   settings: {
   "import/resolver": {
