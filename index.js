@@ -52,7 +52,11 @@ module.exports = {
         "ts": "never",
         "tsx": "never"
       }
-   ],
+    ],
+    "import/no-extraneous-dependencies": [
+      "warn",
+      { "devDependencies": ["**/*.test.js", "**/*.test.jsx", "**/*.test.tsx", "**/*.test.ts"] }
+    ],
     "max-len": ["error", {
       "code": 100,
       "tabWidth": 2,
