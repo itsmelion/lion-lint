@@ -1,5 +1,6 @@
 module.exports = {
   parser: "babel-eslint",
+  reportUnusedDisableDirectives: true,
   extends: [
     "standard",
     "eslint:recommended",
@@ -18,7 +19,40 @@ module.exports = {
     "jsx-a11y",
     "react-hooks"
   ],
+  settings: {
+    "import/resolver": {
+      "node": { "paths": ["./src"] } },
+    },
+    env: {
+      // Mind that react-native doesnt fully implement browsers API.
+      "node": true,
+      "browser": true,
+      "es6": true,
+    },
+    globals: {
+      Atomics: "readonly",
+      SharedArrayBuffer: "readonly",
+    },
+    parserOptions: {
+      ecmaVersion: 2020,
+      sourceType: "module",
+      ecmaFeatures: {
+        jsx: true,
+        modules: true,
+      }
+    },
   rules: {
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+   ],
     "max-len": ["error", {
       "code": 100,
       "tabWidth": 2,
@@ -137,27 +171,5 @@ module.exports = {
 
     // Warn against nested then() or catch() statements
     "promise/no-nesting": 1
-  },
-  settings: {
-  "import/resolver": {
-    "node": { "paths": ["./src"] } },
-  },
-  env: {
-    // Mind that react-native doesnt fully implement browsers API.
-    "node": true,
-    "browser": true,
-    "es6": true,
-  },
-  globals: {
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly",
-  },
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: "module",
-    ecmaFeatures: {
-      jsx: true,
-      modules: true,
-    }
   },
 };
