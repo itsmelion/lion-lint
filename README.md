@@ -31,3 +31,11 @@ and its dependencies: `eslint-plugin-flowtype` `eslint-config-react-app`
 ```json
   "extends": ["lion/react-native"]
 ```
+### Using "Typescript" ?
+Install these two required dependencies:
+- `@typescript-eslint/eslint-plugin`
+- `@typescript-eslint/parser`
+
+```json
+  "extends": ["lion/typescript"]
+```
