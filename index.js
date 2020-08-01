@@ -81,7 +81,6 @@ module.exports = {
       'promise/param-names': 'error',
       'react/prop-types': 'off',
       'react/state-in-constructor': ['warn', 'never'],
-      'react/jsx-props-no-spreading': 'off',
       'import/prefer-default-export': 'off',
       'arrow-parens': 'off',
       'no-console': ['error', { allow: ['warn', 'error'] }],
