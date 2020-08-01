@@ -1,8 +1,8 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
-    'lion',
     'plugin:@typescript-eslint/recommended',
+    'lion',
   ],
   plugins: [
     '@typescript-eslint',
@@ -10,6 +10,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-use-before-define': ['error', { functions: false, classes: false, variables: false }],
+    'react/jsx-props-no-spreading': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.jsx'] }],
     'react/prop-types': 'off',
     'import/extensions': [
