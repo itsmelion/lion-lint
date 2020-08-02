@@ -7,6 +7,15 @@ module.exports = {
   plugins: [
     '@typescript-eslint',
   ],
+  overrides: [
+    {
+      // enable the rule specifically for TypeScript files
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        '@typescript-eslint/explicit-module-boundary-types': ['warn'],
+      },
+    },
+  ],
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-use-before-define': ['error', { functions: false, classes: false, variables: false }],
