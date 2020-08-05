@@ -3,8 +3,6 @@
 @itsmelion reusable style guide.
 
 # Installation
-It requires `eslint`, `eslint-plugin-import`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, and `eslint-plugin-jsx-a11y`, `eslint-plugin-node`, `eslint-plugin-standard`, `eslint-plugin-promises` and others...
-
 1. Install the correct versions of each package, which are listed by the command:
 
   If using **npm 5+**, use this shortcut
@@ -15,27 +13,48 @@ It requires `eslint`, `eslint-plugin-import`, `eslint-plugin-react`, `eslint-plu
   ```sh
   npm info "eslint-config-lion@latest" peerDependencies
   ```
+2. Install the packages for your ruleset:
+```sh
+npm info "eslint-config-lion@latest" reactDependencies nodeDependencies typescriptDependencies
+```
+
 # Usage
 Add to your `.eslintrc`:
 ```json
-  "extends": ["lion"]
+{ "extends": "lion" }
 ```
-#### Using "Create React App" ?
-dont forget to extend `react-app`
-```json
-  "extends": ["lion", "react-app"]
-```
-and its dependencies: `eslint-plugin-flowtype` `eslint-config-react-app`
 
-### Using "React-Native" ?
+#### Using "Create React App"?
+- dont forget to extend `react-app`
+- and react extra dependencies: `eslint-plugin-flowtype` `eslint-config-react-app`
 ```json
-  "extends": ["lion/react-native"]
+{ "extends": ["lion", "react-app"] }
 ```
-### Using "Typescript" ?
+
+### Using React-Native?
+- EXTRA: `eslint-import-resolver-alias`;
+```json
+{ "extends": "lion/react-native" }
+```
+
+### Using Typescript?
 Install these two required dependencies:
 - `@typescript-eslint/eslint-plugin`
 - `@typescript-eslint/parser`
 
+**Web/JSX**
 ```json
-  "extends": ["lion/typescript"]
+{ "extends": "lion/typescript" }
+```
+
+**Node**
+```json
+{ "extends": "lion/typescript-node" }
+```
+
+### Using Node?
+- dont forget to set: `type: "module"` | `type: "commonjs"` on your package.json
+- REQUIRED: `eslint-plugin-node`;
+```json
+{ "extends": "lion/node" }
 ```
