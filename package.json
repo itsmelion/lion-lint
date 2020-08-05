@@ -27,6 +27,7 @@
     "babel-eslint": "10.1.0",
     "eslint": "7.6.0",
     "eslint-config-airbnb": "18.2.0",
+    "eslint-config-airbnb-base": "14.2.0",
     "eslint-config-promise": "2.0.2",
     "eslint-config-react": "1.1.7",
     "eslint-config-standard": "14.1.1",

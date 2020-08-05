@@ -1,16 +1,17 @@
 const base = require('./base');
 
 module.exports = {
-  parser: '@typescript-eslint/parser',
   reportUnusedDisableDirectives: true,
+  parser: '@typescript-eslint/parser',
+
   extends: [
     'plugin:@typescript-eslint/recommended',
-    ...base.baseReact.rules,
+    ...base.rules,
   ],
 
   plugins: [
     '@typescript-eslint',
-    ...base.baseReact.plugins,
+    ...base.plugins,
   ],
 
   overrides: [
@@ -23,14 +24,25 @@ module.exports = {
     },
   ],
 
-  env: base.baseReact.env,
+  env: {
+    node: true,
+    commonjs: true,
+    es2020: true,
+  },
 
-  parserOptions: base.baseReact.parserOptions,
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: false,
+      modules: true,
+    },
+  },
 
-  settings: base.baseReact.settings,
+  settings: base.settings,
 
   rules: {
-    ...base.baseReact.rules,
+    ...base.rules,
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-use-before-define': ['error', { functions: false, classes: false, variables: false }],
   },

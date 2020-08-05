@@ -1,27 +1,32 @@
+const base = require('./base');
+
+/**
+ * ? Used to enable these rules.. still nescessary?
+ * 'react/jsx-filename-extension': 0,
+ * 'import/no-extraneous-dependencies': 0,
+ * 'jsx-a11y/anchor-is-valid': 0,
+*/
+
 module.exports = {
-  extends: [
-    'lion',
-  ],
-  rules: {
-    'react/jsx-filename-extension': 0,
-    'import/no-extraneous-dependencies': 0,
-    'jsx-a11y/anchor-is-valid': 0,
-  },
+  ...base.baseReact,
+
   globals: {
-    fetch: 'readonly',
+    // fetch: 'readonly',
+    ...base.baseReact.globals,
     __DEV__: 'readonly',
   },
+
   settings: {
+    ...base.baseReact.settings,
     'import/resolver': {
       node: {
-        paths: ['./'],
+        paths: ['./', './src'],
         extensions: [
           '.js',
           '.ts',
           '.jsx',
           '.tsx',
           '.json',
-          '.native',
           '.native.js',
           '.native.ts',
           '.native.jsx',
@@ -43,7 +48,9 @@ module.exports = {
           '.android.tsx',
           '.android.json',
         ],
+        moduleDirectory: ['node_modules', 'src'],
       },
+
       alias: {
         map: [
           ['assets', './assets'],
