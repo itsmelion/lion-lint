@@ -167,7 +167,7 @@ exports.baseReact = {
   env: {
     node: true,
     commonjs: true,
-    browser: true, // Mind that react-native doesnt fully implement browsers API.
+    browser: true,
     es2020: true,
   },
 
@@ -191,7 +191,9 @@ exports.baseReact = {
 
   rules: {
     ...this.rules,
-    'react/jsx-closing-bracket-location': ['warn', { selfClosing: 'tag-aligned', nonEmpty: 'after-props' }],
+    'react/jsx-closing-bracket-location': [
+      'warn', { selfClosing: 'tag-aligned', nonEmpty: 'after-props' }
+    ],
     'react/jsx-pascal-case': 1,
     'react/jsx-sort-props': 1,
     'react/jsx-no-useless-fragment': 2,

@@ -5,7 +5,7 @@ module.exports = {
   reportUnusedDisableDirectives: true,
   extends: [
     'plugin:@typescript-eslint/recommended',
-    ...base.baseReact.rules,
+    ...base.baseReact.extends,
   ],
 
   plugins: [
@@ -32,6 +32,8 @@ module.exports = {
   rules: {
     ...base.baseReact.rules,
     '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/no-use-before-define': ['error', { functions: false, classes: false, variables: false }],
+    '@typescript-eslint/no-use-before-define': [
+      'error', { functions: false, classes: false, variables: false },
+    ],
   },
 };

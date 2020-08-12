@@ -6,7 +6,7 @@ module.exports = {
 
   extends: [
     'plugin:@typescript-eslint/recommended',
-    ...base.rules,
+    ...base.extends,
   ],
 
   plugins: [
@@ -44,6 +44,8 @@ module.exports = {
   rules: {
     ...base.rules,
     '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/no-use-before-define': ['error', { functions: false, classes: false, variables: false }],
+    '@typescript-eslint/no-use-before-define': [
+      'error', { functions: false, classes: false, variables: false }
+    ],
   },
 };
