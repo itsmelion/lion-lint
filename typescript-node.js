@@ -45,7 +45,7 @@ module.exports = {
     ...base.rules,
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-use-before-define': [
-      'error', { functions: false, classes: false, variables: false }
+      'error', { functions: false, classes: false, variables: false },
     ],
   },
 };

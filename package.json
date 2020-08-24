@@ -38,6 +38,7 @@
     "@typescript-eslint/parser": "3.8.0"
   },
   "reactDependencies": {
+    "@typescript-eslint/eslint-plugin": "2.x",
     "babel-eslint": ">=10",
     "eslint-plugin-jsx-a11y": ">=3.0.0",
     "eslint-plugin-react": ">=7.20.5",
