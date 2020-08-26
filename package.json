@@ -13,8 +13,6 @@
     "eslint-config-airbnb-base": ">=13.0.0"
   },
   "peerDependencies": {
-    "eslint": ">=6.0.0",
-    "eslint-config-airbnb-base": ">=13.0.0",
     "eslint-config-promise": ">=1.0.0",
     "eslint-config-standard": ">=14.0.0",
     "eslint-plugin-import": ">=2.0.0",
