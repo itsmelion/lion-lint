@@ -56,7 +56,24 @@ exports.rules = {
     ignoreRegExpLiterals: true,
   }],
   'arrow-parens': 'off',
-  'no-console': ['error', { allow: ['warn', 'error'] }],
+  'no-console': [
+    'warn', {
+      allow: [
+        'warn',
+        'error',
+        'time',
+        'timeLog',
+        'timeEnd',
+        'info',
+        'group',
+        'groupCollapsed',
+        'groupEnd',
+        'count',
+        'countReset',
+        'assert',
+      ],
+    },
+  ],
 
   // Warn against template literal placeholder syntax in regular strings
   'no-template-curly-in-string': 1,
@@ -192,7 +209,7 @@ exports.baseReact = {
   rules: {
     ...this.rules,
     'react/jsx-closing-bracket-location': [
-      'warn', { selfClosing: 'tag-aligned', nonEmpty: 'after-props' }
+      'warn', { selfClosing: 'tag-aligned', nonEmpty: 'after-props' },
     ],
     'react/jsx-pascal-case': 1,
     'react/jsx-sort-props': 1,
