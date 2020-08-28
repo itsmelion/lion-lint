@@ -35,7 +35,10 @@ exports.rules = {
   'import/prefer-default-export': 'off',
   'import/no-extraneous-dependencies': [
     'warn',
-    { devDependencies: ['**/*.test.js', '**/*.test.jsx', '**/*.test.tsx', '**/*.test.ts'] },
+    {
+      devDependencies: ['**/*.test.js', '**/*.test.jsx', '**/*.test.tsx', '**/*.test.ts'],
+      packageDir: './',
+    },
   ],
 
   'promise/no-return-wrap': 'error',
