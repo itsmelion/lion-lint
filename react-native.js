@@ -1,12 +1,5 @@
 const base = require('./base');
 
-/**
- * ? Used to enable these rules.. still nescessary?
- * 'react/jsx-filename-extension': 0,
- * 'import/no-extraneous-dependencies': 0,
- * 'jsx-a11y/anchor-is-valid': 0,
-*/
-
 module.exports = {
   ...base.baseReact,
 

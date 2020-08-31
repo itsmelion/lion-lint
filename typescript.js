@@ -1,7 +1,7 @@
 const base = require('./base');
 
 module.exports = {
-  parser: '@typescript-eslint/parser',
+  parser: 'babel-eslint',
   reportUnusedDisableDirectives: true,
   extends: [
     'plugin:@typescript-eslint/recommended',
@@ -15,6 +15,8 @@ module.exports = {
 
   overrides: [
     {
+      parser: '@typescript-eslint/parser',
+
       // enable the rule specifically for TypeScript files
       files: ['*.ts', '*.tsx'],
       rules: {
