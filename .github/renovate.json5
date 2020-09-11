@@ -2,6 +2,8 @@
   "extends": [
     "config:base"
   ],
+  "requiredStatusChecks": null,
+  "rangeStrategy": "widen",
   "packageRules": [
     {
       "updateTypes": ["major", "minor", "patch", "pin", "digest"],

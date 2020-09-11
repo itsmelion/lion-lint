@@ -13,9 +13,9 @@
     "eslint-config-airbnb-base": "*",
     "eslint-config-promise": "*",
     "eslint-config-standard": "*",
+    "eslint-plugin-node": "*",
     "eslint-plugin-promise": "*",
-    "eslint-plugin-standard": "*",
-    "eslint-plugin-node": "*"
+    "eslint-plugin-standard": "*"
   },
   "peerDependencies": {
     "eslint-plugin-import": ">=2.0.0"

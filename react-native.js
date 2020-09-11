@@ -1,13 +1,15 @@
 const base = require('./base');
+const typescript = require('./typescript');
 
 module.exports = {
   ...base.baseReact,
 
   globals: {
-    // fetch: 'readonly',
     ...base.baseReact.globals,
     __DEV__: 'readonly',
   },
+
+  overrides: typescript.overrides,
 
   settings: {
     ...base.baseReact.settings,
