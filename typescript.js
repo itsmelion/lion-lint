@@ -29,6 +29,7 @@ module.exports = {
         '@typescript-eslint/no-use-before-define': [
           'warn', { functions: false, classes: false, variables: false },
         ],
+        ...base.baseReact.rules,
       },
     },
   ],
