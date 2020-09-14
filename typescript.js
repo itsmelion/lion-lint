@@ -25,11 +25,14 @@ module.exports = {
       ],
       rules: {
         ...base.baseReact.rules,
-        '@typescript-eslint/explicit-module-boundary-types': 'off',
-        '@typescript-eslint/explicit-function-return-type': 'off',
+        'no-shadow': 'off',
+        '@typescript-eslint/no-shadow': ['error'],
+        'no-use-before-define': 0,
         '@typescript-eslint/no-use-before-define': [
           'warn', { functions: false, classes: false, variables: false },
         ],
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/explicit-function-return-type': 'off',
       },
     },
   ],
