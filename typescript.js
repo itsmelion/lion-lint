@@ -24,12 +24,12 @@ module.exports = {
         ...base.baseReact.plugins,
       ],
       rules: {
+        ...base.baseReact.rules,
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/no-use-before-define': [
           'warn', { functions: false, classes: false, variables: false },
         ],
-        ...base.baseReact.rules,
       },
     },
   ],

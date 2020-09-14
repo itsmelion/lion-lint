@@ -3,13 +3,13 @@ const typescript = require('./typescript');
 
 module.exports = {
   ...base.baseReact,
+  extends: typescript.extends,
+  overrides: typescript.overrides,
 
   globals: {
     ...base.baseReact.globals,
     __DEV__: 'readonly',
   },
-
-  overrides: typescript.overrides,
 
   settings: {
     ...base.baseReact.settings,
