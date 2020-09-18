@@ -214,6 +214,11 @@ exports.baseReact = {
 
   rules: {
     ...this.rules,
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-use-before-define': [
+      'warn', { functions: false, classes: true, variables: false },
+    ],
     'react/jsx-closing-bracket-location': [
       'warn', { selfClosing: 'tag-aligned', nonEmpty: 'after-props' },
     ],
