@@ -9,6 +9,7 @@
     "node": ">=8.3.0"
   },
   "dependencies": {
+    "babel-eslint": "*",
     "eslint": ">=6.0.0",
     "eslint-config-airbnb-base": "*",
     "eslint-config-promise": "*",
@@ -21,8 +22,17 @@
     "eslint-plugin-import": ">=2.0.0"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.1.1",
+    "@typescript-eslint/parser": "4.1.1",
+    "babel-eslint": "10.1.0",
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-config-react": "1.1.7",
+    "eslint-import-resolver-alias": "1.1.2",
     "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
     "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-react": "7.20.6",
+    "eslint-plugin-react-hooks": "4.1.2",
     "typescript": "4.0.2"
   },
   "typescriptDependencies": {
@@ -39,7 +49,7 @@
     "eslint-config-airbnb": ">=17.0.0",
     "eslint-config-react": ">=1.1.7"
   },
-  "repository": "git@github.com:itsmelion/lion-lint.git",
+  "repository": "https://github.com/itsmelion/lion-lint.git",
   "author": {
     "name": "Christhopher Lion",
     "email": "itsmelion@icloud.com",
