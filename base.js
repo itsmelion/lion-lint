@@ -219,6 +219,15 @@ exports.baseReact = {
     '@typescript-eslint/no-use-before-define': [
       'warn', { functions: false, classes: true, variables: false },
     ],
+    'import/order': ['warn', {
+      alphabetize: {
+        order: 'asc',
+        caseInsensitive: true,
+      },
+    }],
+    'import/no-default-export': 1,
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
     'react/jsx-closing-bracket-location': [
       'warn', { selfClosing: 'tag-aligned', nonEmpty: 'after-props' },
     ],
