@@ -2030,9 +2030,9 @@ type-fest@^0.8.1:
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
 "typescript@^4.0.3 || ^4.1.0-dev.20201004":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.3.tgz#153bbd468ef07725c1df9c77e8b453f8d36abba5"
-  integrity sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
+  version "4.1.0-dev.20201004"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.0-dev.20201004.tgz#9c709e3fef2d2c8f9e1259278240680df2c65403"
+  integrity sha512-z5Al+nSC0c6mc0NwYiLzVbTc7hW0xI2CoHophrrs+RPr+haObK3Pe4ZAiYXKmviq6TjR8+lqigLZplr8JYr8GA==
 
 uri-js@^4.2.2:
   version "4.4.0"
