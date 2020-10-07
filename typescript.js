@@ -29,6 +29,7 @@ module.exports = {
       rules: {
         ...base.baseReact.rules,
         'no-use-before-define': 0,
+        'no-unused-vars': 0,
       },
     },
   ],
