@@ -14,9 +14,9 @@ exports.plugins = [
 exports.settings = {
   'import/resolver': {
     node: {
-      paths: ['./src'],
+      paths: ['./src', './packages'],
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      moduleDirectory: ['node_modules', 'src/'],
+      moduleDirectory: ['node_modules', 'src/', 'packages/'],
     },
   },
 };
@@ -33,17 +33,16 @@ exports.rules = {
     },
   ],
   'import/prefer-default-export': 'off',
-  'import/no-extraneous-dependencies': [
+  'import/no-extraneous-dependencies': context => [
     'warn',
     {
       devDependencies: [
         '**/*.test.js', '**/*.test.jsx', '**/*.test.tsx', '**/*.test.ts',
         '**/*.stories.js', '**/*.stories.jsx', '**/*.stories.tsx', '**/*.stories.ts',
       ],
-      packageDir: './',
+      packageDir: [context.getFilename(), __dirname],
     },
   ],
-
   'promise/no-return-wrap': 'error',
   'promise/param-names': 'error',
   'promise/always-return': 2,
