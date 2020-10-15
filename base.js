@@ -33,14 +33,14 @@ exports.rules = {
     },
   ],
   'import/prefer-default-export': 'off',
-  'import/no-extraneous-dependencies': context => [
+  'import/no-extraneous-dependencies': [
     'warn',
     {
       devDependencies: [
         '**/*.test.js', '**/*.test.jsx', '**/*.test.tsx', '**/*.test.ts',
         '**/*.stories.js', '**/*.stories.jsx', '**/*.stories.tsx', '**/*.stories.ts',
       ],
-      packageDir: [context.getFilename(), __dirname],
+      packageDir: [__dirname, process.cwd()],
     },
   ],
   'promise/no-return-wrap': 'error',
