@@ -33,7 +33,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-react": "7.21.5",
     "eslint-plugin-react-hooks": "4.1.2",
-    "typescript": "4.1.0-dev.20201019"
+    "typescript": "4.1.0-dev.20201020"
   },
   "typescriptDependencies": {
     "@typescript-eslint/eslint-plugin": "*",
