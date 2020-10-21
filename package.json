@@ -8,6 +8,10 @@
   "engines": {
     "node": ">=8.3.0"
   },
+  "scripts": {
+    "prerelease": "yarn publish --prerelease --tag=next",
+    "next": "yarn prerelease"
+  },
   "dependencies": {
     "babel-eslint": "*",
     "eslint": "7.11.0",
