@@ -2037,10 +2037,10 @@ type-fest@^0.8.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
-typescript@4.1.0-dev.20201025:
-  version "4.1.0-dev.20201025"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.0-dev.20201025.tgz#817d8ba47cdf72e3096ec4f126cd43e8b32fdd2f"
-  integrity sha512-JIYTkDadjkqGl1ZgD9GhoBQdJ8LIDLvUtwqhOC7F8NHwlPSenL6mKDtV3IQ5k18UpBZD+Xwk58ncwU47UyMyxw==
+typescript@4.1.0-dev.20201026:
+  version "4.1.0-dev.20201026"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.0-dev.20201026.tgz#81ebe09a926688ba69dcb26e987b34993bcea145"
+  integrity sha512-eeu0PiTyVU+obXKWYUAOVkPjKFzQOdLYGbGvd5TbcQ/CH7c5N7Q3VBuVdO8/rUhau8vw7Mc3EWzCnw7WUG0Img==
 
 uri-js@^4.2.2:
   version "4.4.0"
