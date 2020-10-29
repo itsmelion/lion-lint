@@ -213,6 +213,11 @@ exports.baseReact = {
 
   rules: {
     ...this.rules,
+
+    // ignore young React v17
+    'no-unused-vars': ['warn', { varsIgnorePattern: '^React$' }],
+    '@typescript-eslint/no-unused-vars': ['warn', { varsIgnorePattern: '^React$' }],
+
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-use-before-define': [
