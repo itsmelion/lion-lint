@@ -53,6 +53,23 @@
     "eslint-config-airbnb": ">=17.0.0",
     "eslint-config-react": ">=1.1.7"
   },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular"
+      }
+    }
+  },
   "repository": "https://github.com/itsmelion/lion-lint.git",
   "author": {
     "name": "Christhopher Lion",
