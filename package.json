@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lion",
-  "version": "2.0.0-beta10.1",
+  "version": "2.0.2-0",
   "description": "Lion reusable lint config",
   "main": "index.js",
   "type": "commonjs",
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "babel-eslint": "*",
-    "eslint": "7.12.1",
+    "eslint": ">=6",
     "eslint-config-airbnb-base": "*",
     "eslint-config-promise": "*",
     "eslint-config-standard": "*",
