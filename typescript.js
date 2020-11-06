@@ -30,6 +30,13 @@ module.exports = {
         ...base.baseReact.rules,
         'no-use-before-define': 0,
         'no-unused-vars': 0,
+        '@typescript-eslint/no-unused-vars': [
+          'warn',
+          {
+            varsIgnorePattern: '^React$',
+            argsIgnorePattern: ['^_', 'ref'],
+          },
+        ],
       },
     },
   ],
