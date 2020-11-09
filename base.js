@@ -219,7 +219,7 @@ exports.baseReact = {
       'warn',
       {
         varsIgnorePattern: '^React$',
-        argsIgnorePattern: ['^_', 'ref'],
+        argsIgnorePattern: '^_|ref',
       },
     ],
     '@typescript-eslint/no-unused-vars': 'off',

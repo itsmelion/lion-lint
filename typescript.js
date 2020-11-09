@@ -34,7 +34,7 @@ module.exports = {
           'warn',
           {
             varsIgnorePattern: '^React$',
-            argsIgnorePattern: ['^_', 'ref'],
+            argsIgnorePattern: '^_|ref',
           },
         ],
       },
