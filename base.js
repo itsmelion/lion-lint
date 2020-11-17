@@ -16,7 +16,7 @@ exports.settings = {
     node: {
       paths: ['./src', './packages'],
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      moduleDirectory: ['node_modules', 'src/', 'packages/'],
+      moduleDirectory: ['node_modules', './src', './packages'],
     },
   },
 };
