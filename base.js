@@ -6,7 +6,6 @@ exports.extends = [
 ];
 
 exports.plugins = [
-  'standard',
   'promise',
   'import',
 ];
