@@ -13,8 +13,9 @@
     "next": "yarn prerelease"
   },
   "dependencies": {
-    "babel-eslint": "*",
-    "eslint": "7.24.0",
+    "@babel/core": "*",
+    "@babel/eslint-parser": "*",
+    "eslint": ">=6",
     "eslint-config-airbnb-base": "*",
     "eslint-config-promise": "*",
     "eslint-config-standard": "*",
@@ -25,9 +26,10 @@
     "eslint-plugin-import": ">=2.0.0"
   },
   "devDependencies": {
+    "@babel/core": "7.13.16",
+    "@babel/eslint-parser": "7.13.14",
     "@typescript-eslint/eslint-plugin": "4.22.0",
     "@typescript-eslint/parser": "4.22.0",
-    "babel-eslint": "10.1.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-react": "1.1.7",
     "eslint-import-resolver-alias": "1.1.2",

@@ -165,7 +165,7 @@ exports.rules = {
 };
 
 exports.baseReact = {
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   reportUnusedDisableDirectives: true,
 
   extends: [
