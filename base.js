@@ -5,10 +5,7 @@ exports.extends = [
   'airbnb-base/whitespace',
 ];
 
-exports.plugins = [
-  'promise',
-  'import',
-];
+exports.plugins = ['promise', 'import'];
 
 exports.settings = {
   'import/resolver': {
@@ -36,8 +33,14 @@ exports.rules = {
     'warn',
     {
       devDependencies: [
-        '**/*.test.js', '**/*.test.jsx', '**/*.test.tsx', '**/*.test.ts',
-        '**/*.stories.js', '**/*.stories.jsx', '**/*.stories.tsx', '**/*.stories.ts',
+        '**/*.test.js',
+        '**/*.test.jsx',
+        '**/*.test.tsx',
+        '**/*.test.ts',
+        '**/*.stories.js',
+        '**/*.stories.jsx',
+        '**/*.stories.tsx',
+        '**/*.stories.ts',
       ],
       packageDir: [__dirname, process.cwd()],
     },
@@ -49,19 +52,23 @@ exports.rules = {
   'promise/no-nesting': 1,
 
   'no-use-before-define': ['warn', { functions: false, classes: false }],
-  'max-len': ['error', {
-    code: 100,
-    tabWidth: 2,
-    ignoreComments: true,
-    ignoreTrailingComments: true,
-    ignoreUrls: true,
-    ignoreStrings: false,
-    ignoreTemplateLiterals: false,
-    ignoreRegExpLiterals: true,
-  }],
+  'max-len': [
+    'error',
+    {
+      code: 100,
+      tabWidth: 2,
+      ignoreComments: true,
+      ignoreTrailingComments: true,
+      ignoreUrls: true,
+      ignoreStrings: false,
+      ignoreTemplateLiterals: false,
+      ignoreRegExpLiterals: true,
+    },
+  ],
   'arrow-parens': 'off',
   'no-console': [
-    'warn', {
+    'warn',
+    {
       allow: [
         'warn',
         'error',
@@ -133,7 +140,7 @@ exports.rules = {
   // Require using Error objects as Promise rejection reasons
   'prefer-promise-reject-errors': 2,
 
-  // Enforce “for” loop update clause moving the counter in the right direction
+  // Enforce 'for loop' update clause moving the counter in the right direction
   'for-direction': 2,
 
   // Enforce return statements in getters
@@ -178,12 +185,7 @@ exports.baseReact = {
     'airbnb/hooks',
   ],
 
-  plugins: [
-    ...this.plugins,
-    'react',
-    'jsx-a11y',
-    'react-hooks',
-  ],
+  plugins: [...this.plugins, 'react', 'jsx-a11y', 'react-hooks'],
 
   env: {
     node: true,
@@ -226,19 +228,24 @@ exports.baseReact = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-use-before-define': [
-      'warn', { functions: false, classes: true, variables: false },
+      'warn',
+      { functions: false, classes: true, variables: false },
     ],
-    'import/order': ['warn', {
-      alphabetize: {
-        order: 'asc',
-        caseInsensitive: true,
+    'import/order': [
+      'warn',
+      {
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
       },
-    }],
+    ],
     'import/no-default-export': 1,
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-closing-bracket-location': [
-      'warn', { selfClosing: 'tag-aligned', nonEmpty: 'after-props' },
+      'warn',
+      { selfClosing: 'tag-aligned', nonEmpty: 'after-props' },
     ],
     'react/jsx-pascal-case': 1,
     'react/jsx-sort-props': 1,
