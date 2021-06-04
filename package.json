@@ -15,7 +15,7 @@
   "dependencies": {
     "@babel/core": "*",
     "@babel/eslint-parser": "*",
-    "eslint": "7.27.0",
+    "eslint": "7.28.0",
     "eslint-config-airbnb-base": "*",
     "eslint-config-promise": "*",
     "eslint-config-standard": "*",
