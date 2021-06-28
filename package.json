@@ -28,8 +28,8 @@
   "devDependencies": {
     "@babel/core": "7.14.6",
     "@babel/eslint-parser": "7.14.7",
-    "@typescript-eslint/eslint-plugin": "4.28.0",
-    "@typescript-eslint/parser": "4.28.0",
+    "@typescript-eslint/eslint-plugin": "4.28.1",
+    "@typescript-eslint/parser": "4.28.1",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-react": "1.1.7",
     "eslint-import-resolver-alias": "1.1.2",
