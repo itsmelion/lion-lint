@@ -28,6 +28,16 @@ exports.rules = {
       tsx: 'never',
     },
   ],
+  'import/order': [
+    'warn',
+    {
+      alphabetize: {
+        order: 'asc',
+        caseInsensitive: true,
+      },
+    },
+  ],
+  'import/no-default-export': 1,
   'import/prefer-default-export': 'off',
   'import/no-extraneous-dependencies': [
     'warn',
@@ -45,6 +55,7 @@ exports.rules = {
       packageDir: [__dirname, process.cwd()],
     },
   ],
+
   'promise/no-return-wrap': 'error',
   'promise/param-names': 'error',
   'promise/always-return': 2,
@@ -219,28 +230,25 @@ exports.baseReact = {
     'no-unused-vars': [
       'warn',
       {
-        varsIgnorePattern: '^React$',
+        // varsIgnorePattern: '^React$',
         argsIgnorePattern: '^_|ref',
       },
     ],
-    '@typescript-eslint/no-unused-vars': 'off',
 
+    '@typescript-eslint/no-unused-vars': [
+      'warn',
+      {
+        // varsIgnorePattern: '^React$',
+        argsIgnorePattern: '^_|ref',
+      },
+    ],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-use-before-define': [
       'warn',
       { functions: false, classes: true, variables: false },
     ],
-    'import/order': [
-      'warn',
-      {
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
-      },
-    ],
-    'import/no-default-export': 1,
+
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-closing-bracket-location': [
