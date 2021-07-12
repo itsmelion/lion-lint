@@ -9,7 +9,6 @@ exports.imports = {
       tsx: 'never',
     },
   ],
-
   'import/order': [
     'warn',
     {
@@ -40,4 +39,4 @@ exports.imports = {
       packageDir: [__dirname, process.cwd()],
     },
   ],
-}
+};

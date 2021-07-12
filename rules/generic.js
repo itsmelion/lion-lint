@@ -1,4 +1,5 @@
 exports.generic = {
+  'arrow-parens': 'off',
   'no-console': [
     'warn',
     {
@@ -18,6 +19,8 @@ exports.generic = {
       ],
     },
   ],
+
+  'no-use-before-define': ['warn', { functions: false, classes: false }],
 
   // Warn against template literal placeholder syntax in regular strings
   'no-template-curly-in-string': 1,
@@ -92,11 +95,15 @@ exports.generic = {
   'no-path-concat': 1,
 
   // # Typescript
-
+  'no-unused-vars': [
+    'warn',
+    {
+      argsIgnorePattern: '^_|ref',
+    },
+  ],
   '@typescript-eslint/no-unused-vars': [
     'warn',
     {
-      // varsIgnorePattern: '^React$', used to ignore react due advent of react 17. but by now should be ok to remove this
       // allows unused _dangle args, and ref*(needs to be pulled out of react-hook-form controlled component)
       argsIgnorePattern: '^_|ref',
     },
@@ -106,4 +113,7 @@ exports.generic = {
     'warn',
     { functions: false, classes: true, variables: false },
   ],
-}
+
+  '@typescript-eslint/explicit-module-boundary-types': 'off',
+  '@typescript-eslint/explicit-function-return-type': 'off',
+};

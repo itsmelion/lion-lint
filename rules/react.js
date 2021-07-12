@@ -16,4 +16,17 @@ exports.react = {
   // React 17 JSX transformer
   'react/jsx-uses-react': 'off',
   'react/react-in-jsx-scope': 'off',
-}
+
+  'react/jsx-closing-bracket-location': [
+    'warn',
+    { selfClosing: 'tag-aligned', nonEmpty: 'after-props' },
+  ],
+  'react/jsx-fragments': [2, 'syntax'],
+  'react/no-adjacent-inline-elements': 1,
+  'react/no-danger': 'error',
+  'react/jsx-props-no-spreading': 'off',
+  'react/default-props-match-prop-types': ['error', { allowRequiredDefaults: false }],
+  'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.jsx'] }],
+  'react/prop-types': 'off',
+  'react/state-in-constructor': ['warn', 'never'],
+};
