@@ -49,13 +49,13 @@ exports.baseReact = {
     node: true,
     commonjs: true,
     browser: true,
-    es2020: true,
+    es2021: true,
   },
 
   globals: this.globals,
 
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2021,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
