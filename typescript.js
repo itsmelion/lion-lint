@@ -4,10 +4,10 @@ module.exports = {
   ...base.baseReact,
 
   extends: [
+    ...base.baseReact.extends,
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
-    ...base.baseReact.extends,
   ],
 
   overrides: [
@@ -16,14 +16,14 @@ module.exports = {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
       extends: [
+        ...base.baseReact.extends,
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/eslint-recommended',
-        ...base.baseReact.extends,
       ],
 
       plugins: [
-        '@typescript-eslint',
         ...base.baseReact.plugins,
+        '@typescript-eslint',
       ],
 
       rules: {
@@ -37,7 +37,7 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': [
           'warn',
           {
-            varsIgnorePattern: '^React$',
+            // varsIgnorePattern: '^React$',
             argsIgnorePattern: '^_|ref',
           },
         ],

@@ -1,2 +1,4 @@
 // Internal lint, uses self configuration. lol.
-module.exports = require('./node');
+const node = require('./node');
+
+module.exports = node;

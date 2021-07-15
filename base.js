@@ -9,7 +9,7 @@ exports.extends = [
   'airbnb-base/whitespace',
 ];
 
-exports.plugins = ['promise', 'import'];
+exports.plugins = ['@typescript-eslint', 'promise', 'import'];
 
 exports.settings = {
   'import/resolver': {
@@ -22,11 +22,10 @@ exports.settings = {
 };
 
 exports.rules = {
+  ...whitespace,
   ...generic,
   ...promises,
   ...imports,
-  ...react,
-  ...whitespace,
 };
 
 exports.baseReact = {
@@ -70,5 +69,8 @@ exports.baseReact = {
     react: { version: 'detect' },
   },
 
-  rules: this.rules,
+  rules: {
+    ...this.rules,
+    ...react,
+  },
 };

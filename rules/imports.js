@@ -23,20 +23,25 @@ exports.imports = {
   'import/no-default-export': 1,
   'import/prefer-default-export': 'off',
 
-  'import/no-extraneous-dependencies': [
-    'warn',
-    {
-      devDependencies: [
-        '**/*.test.js',
-        '**/*.test.jsx',
-        '**/*.test.tsx',
-        '**/*.test.ts',
-        '**/*.stories.js',
-        '**/*.stories.jsx',
-        '**/*.stories.tsx',
-        '**/*.stories.ts',
-      ],
-      packageDir: [__dirname, process.cwd()],
-    },
-  ],
+  // 'import/no-extraneous-dependencies': [
+  //   'warn',
+  //   {
+  //     devDependencies: [
+  //       '**/*.test.js',
+  //       '**/*.test.jsx',
+  //       '**/*.test.tsx',
+  //       '**/*.test.ts',
+  //       '**/*.stories.js',
+  //       '**/*.stories.jsx',
+  //       '**/*.stories.tsx',
+  //       '**/*.stories.ts',
+  //     ],
+  //     packageDir: [
+  //       '.',
+  //       process.cwd(),
+  //       __dirname,
+  //       path.relative(process.cwd(), __dirname),
+  //     ],
+  //   },
+  // ],
 };
