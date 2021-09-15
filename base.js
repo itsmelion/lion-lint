@@ -54,7 +54,7 @@ exports.baseReact = {
   globals: this.globals,
 
   parserOptions: {
-    ecmaVersion: 2021,
+    ecmaVersion: 'latest',
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,

@@ -1,4 +1,5 @@
 const base = require('./base');
+const { typescriptGenerics } = require('./rules');
 
 module.exports = {
   ...base.baseReact,
@@ -28,19 +29,7 @@ module.exports = {
 
       rules: {
         ...base.baseReact.rules,
-        'no-use-before-define': 0,
-
-        'no-shadow': 'off',
-        '@typescript-eslint/no-shadow': 'error',
-
-        'no-unused-vars': 0,
-        '@typescript-eslint/no-unused-vars': [
-          'warn',
-          {
-            // varsIgnorePattern: '^React$',
-            argsIgnorePattern: '^_|ref',
-          },
-        ],
+        ...typescriptGenerics,
       },
     },
   ],

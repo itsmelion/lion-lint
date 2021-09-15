@@ -21,12 +21,12 @@
     "eslint-config-airbnb-base": "*",
     "eslint-config-promise": "*",
     "eslint-config-standard": "*",
+    "eslint-import-resolver-alias": "*",
+    "eslint-plugin-import": "*",
     "eslint-plugin-node": "*",
     "eslint-plugin-promise": "*"
   },
-  "peerDependencies": {
-    "eslint-plugin-import": ">=2.0.0"
-  },
+  "peerDependencies": {},
   "devDependencies": {
     "@babel/core": "7.15.5",
     "@babel/eslint-parser": "7.15.4",
@@ -47,12 +47,11 @@
     "@typescript-eslint/parser": "*"
   },
   "reactDependencies": {
-    "@typescript-eslint/eslint-plugin": "2.x",
-    "babel-eslint": ">=10",
+    "@typescript-eslint/parser": "*",
+    "@typescript-eslint/eslint-plugin": "*",
     "eslint-plugin-jsx-a11y": ">=3.0.0",
     "eslint-plugin-react": ">=7.20.5",
     "eslint-plugin-react-hooks": ">=1.0.0",
-    "eslint-import-resolver-alias": "1.1.2",
     "eslint-config-airbnb": ">=17.0.0",
     "eslint-config-react": ">=1.1.7"
   },

@@ -1,8 +1,9 @@
 const base = require('./base');
+const { typescriptGenerics } = require('./rules');
 
 module.exports = {
   reportUnusedDisableDirectives: true,
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
 
   extends: [
     'plugin:@typescript-eslint/recommended',
@@ -30,11 +31,11 @@ module.exports = {
   env: {
     node: true,
     commonjs: true,
-    es2020: true,
+    es2021: true,
   },
 
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 'latest',
     sourceType: 'module',
     ecmaFeatures: {
       jsx: false,
@@ -46,9 +47,6 @@ module.exports = {
 
   rules: {
     ...base.rules,
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/no-use-before-define': [
-      'error', { functions: false, classes: false, variables: false },
-    ],
+    ...typescriptGenerics,
   },
 };
