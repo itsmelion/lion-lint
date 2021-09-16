@@ -11,7 +11,7 @@ module.exports = {
     'plugin:import/typescript',
   ],
 
-  overrides: {
+  overrides: [{
     // enable the rule specifically for TypeScript files
     files: ['**/*.ts', '**/*.tsx'],
     parser: '@typescript-eslint/parser',
@@ -32,5 +32,5 @@ module.exports = {
       ...base.rules,
       ...typescriptGenerics,
     },
-  },
+  }],
 };

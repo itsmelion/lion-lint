@@ -24,8 +24,6 @@ module.exports = {
     es2021: true,
   },
 
-  globals: typescript.globals,
-
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
