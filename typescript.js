@@ -11,28 +11,26 @@ module.exports = {
     'plugin:import/typescript',
   ],
 
-  overrides: [
-    {
-      // enable the rule specifically for TypeScript files
-      files: ['**/*.ts', '**/*.tsx'],
-      parser: '@typescript-eslint/parser',
+  overrides: {
+    // enable the rule specifically for TypeScript files
+    files: ['**/*.ts', '**/*.tsx'],
+    parser: '@typescript-eslint/parser',
 
-      extends: [
-        ...base.extends,
-        'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/eslint-recommended',
-        'plugin:import/typescript',
-      ],
+    extends: [
+      ...base.extends,
+      'plugin:@typescript-eslint/recommended',
+      'plugin:@typescript-eslint/eslint-recommended',
+      'plugin:import/typescript',
+    ],
 
-      plugins: [
-        ...base.plugins,
-        '@typescript-eslint',
-      ],
+    plugins: [
+      ...base.plugins,
+      '@typescript-eslint',
+    ],
 
-      rules: {
-        ...base.rules,
-        ...typescriptGenerics,
-      },
+    rules: {
+      ...base.rules,
+      ...typescriptGenerics,
     },
-  ],
+  },
 };

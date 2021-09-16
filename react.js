@@ -1,11 +1,12 @@
+const base = require('./base');
 const { react } = require('./rules');
 const typescript = require('./typescript');
 
 module.exports = {
-  ...typescript,
+  ...base,
 
   extends: [
-    ...typescript.extends,
+    ...base.extends,
     'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
@@ -14,7 +15,7 @@ module.exports = {
     'airbnb/hooks',
   ],
 
-  plugins: [...typescript.plugins, 'jsx-a11y', 'react', 'react-hooks'],
+  plugins: [...base.plugins, 'jsx-a11y', 'react', 'react-hooks'],
 
   env: {
     node: true,
@@ -35,29 +36,38 @@ module.exports = {
   },
 
   settings: {
-    ...typescript.settings,
 
     // Tells eslint-plugin-react to automatically detect the version of React to use
     react: { version: 'detect' },
   },
 
   rules: {
-    ...typescript.rules,
+    ...base.rules,
     ...react,
   },
 
   overrides: [
     {
-      ...typescript.overrides,
+      ...typescript.overrides[0],
+
+      extends: [
+        ...typescript.overrides[0].extends,
+        'plugin:jsx-a11y/recommended',
+        'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
+        'airbnb',
+        'airbnb/whitespace',
+        'airbnb/hooks',
+      ],
 
       plugins: [
-        ...typescript.plugins,
+        ...typescript.overrides[0].plugins,
         '@typescript-eslint',
         'jsx-a11y', 'react', 'react-hooks',
       ],
 
       rules: {
-        ...typescript.rules,
+        ...typescript.overrides[0].rules,
         ...react,
       },
     },
