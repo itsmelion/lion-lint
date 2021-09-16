@@ -1,18 +1,15 @@
-const base = require('./base');
-const typescript = require('./typescript');
+const react = require('./react');
 
 module.exports = {
-  ...base.baseReact,
-  extends: typescript.extends,
-  overrides: typescript.overrides,
+  ...react,
 
   globals: {
-    ...base.baseReact.globals,
+    ...react.globals,
     __DEV__: 'readonly',
   },
 
   settings: {
-    ...base.baseReact.settings,
+    ...react.settings,
     'import/resolver': {
       node: {
         paths: ['./', './src'],

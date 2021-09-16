@@ -6,11 +6,15 @@ module.exports = {
 
   extends: [
     ...typescript.extends,
+    'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'airbnb',
+    'airbnb/whitespace',
+    'airbnb/hooks',
   ],
 
-  plugins: [...typescript.plugins, 'react', 'react-hooks'],
+  plugins: [...typescript.plugins, 'jsx-a11y', 'react', 'react-hooks'],
 
   env: {
     node: true,
@@ -41,4 +45,21 @@ module.exports = {
     ...typescript.rules,
     ...react,
   },
+
+  overrides: [
+    {
+      ...typescript.overrides,
+
+      plugins: [
+        ...typescript.plugins,
+        '@typescript-eslint',
+        'jsx-a11y', 'react', 'react-hooks',
+      ],
+
+      rules: {
+        ...typescript.rules,
+        ...react,
+      },
+    },
+  ],
 };

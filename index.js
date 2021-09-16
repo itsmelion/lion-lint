@@ -1,3 +1,4 @@
-const base = require('./base');
+const react = require('./react');
 
-module.exports = base.baseReact;
+// extends: lion === react settings
+module.exports = react;

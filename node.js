@@ -1,7 +1,7 @@
 const base = require('./base');
 
 module.exports = {
-  reportUnusedDisableDirectives: true,
+  ...base,
 
   extends: [
     ...base.extends,

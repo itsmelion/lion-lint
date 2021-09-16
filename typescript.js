@@ -2,10 +2,10 @@ const base = require('./base');
 const { typescriptGenerics } = require('./rules');
 
 module.exports = {
-  ...base.baseReact,
+  ...base,
 
   extends: [
-    ...base.baseReact.extends,
+    ...base.extends,
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
@@ -16,19 +16,21 @@ module.exports = {
       // enable the rule specifically for TypeScript files
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
+
       extends: [
-        ...base.baseReact.extends,
+        ...base.extends,
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:import/typescript',
       ],
 
       plugins: [
-        ...base.baseReact.plugins,
+        ...base.plugins,
         '@typescript-eslint',
       ],
 
       rules: {
-        ...base.baseReact.rules,
+        ...base.rules,
         ...typescriptGenerics,
       },
     },
