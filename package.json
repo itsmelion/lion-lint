@@ -26,7 +26,6 @@
     "eslint-plugin-node": "*",
     "eslint-plugin-promise": "*"
   },
-  "peerDependencies": {},
   "devDependencies": {
     "@babel/core": "7.15.5",
     "@babel/eslint-parser": "7.15.4",
@@ -77,6 +76,5 @@
     "name": "Christhopher Lion",
     "email": "itsmelion@icloud.com",
     "url": "https://lion.alia.ml/"
-  },
-  "private": false
+  }
 }
