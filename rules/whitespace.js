@@ -1,4 +1,5 @@
 exports.whitespace = {
+  indent: ['error', 2],
   'max-len': [
     'error',
     {
