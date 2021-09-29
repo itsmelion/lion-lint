@@ -1,3 +1,5 @@
+const path = require('path');
+
 exports.imports = {
   'import/extensions': [
     'error',
@@ -37,10 +39,9 @@ exports.imports = {
   //       '**/*.stories.ts',
   //     ],
   //     packageDir: [
-  //       '.',
-  //       process.cwd(),
   //       __dirname,
-  //       path.relative(process.cwd(), __dirname),
+  //       path.join(process.cwd(), __dirname),
+  //       path.join(process.cwd(), __dirname, 'packages'),
   //     ],
   //   },
   // ],
