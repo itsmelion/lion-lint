@@ -124,4 +124,7 @@ exports.typescriptGenerics = {
 
   'no-shadow': 'off',
   '@typescript-eslint/no-shadow': 'error',
+
+  indent: 'off',
+  '@typescript-eslint/indent': ['warn', 2],
 };
