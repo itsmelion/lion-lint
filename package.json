@@ -74,5 +74,6 @@
     "name": "Christhopher Lion",
     "email": "itsmelion@icloud.com",
     "url": "https://lion.alia.ml/"
-  }
+  },
+  "packageManager": "yarn@3.0.2"
 }
