@@ -15,7 +15,6 @@
     "lint:ci": "eslint ./**/*.{js,jsx,ts,tsx}"
   },
   "dependencies": {
-    "@babel/core": "*",
     "eslint": "8.0.0",
     "eslint-config-airbnb-base": "*",
     "eslint-config-promise": "*",
@@ -26,7 +25,6 @@
     "eslint-plugin-promise": "*"
   },
   "devDependencies": {
-    "@babel/core": "7.15.8",
     "@typescript-eslint/eslint-plugin": "5.0.0",
     "@typescript-eslint/parser": "5.0.0",
     "eslint-config-airbnb": "18.2.1",
