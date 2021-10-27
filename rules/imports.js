@@ -25,24 +25,25 @@ exports.imports = {
   'import/no-default-export': 1,
   'import/prefer-default-export': 'off',
 
-  // 'import/no-extraneous-dependencies': [
-  //   'warn',
-  //   {
-  //     devDependencies: [
-  //       '**/*.test.js',
-  //       '**/*.test.jsx',
-  //       '**/*.test.tsx',
-  //       '**/*.test.ts',
-  //       '**/*.stories.js',
-  //       '**/*.stories.jsx',
-  //       '**/*.stories.tsx',
-  //       '**/*.stories.ts',
-  //     ],
-  //     packageDir: [
-  //       __dirname,
-  //       path.join(process.cwd(), __dirname),
-  //       path.join(process.cwd(), __dirname, 'packages'),
-  //     ],
-  //   },
-  // ],
+  'import/no-extraneous-dependencies': [
+    'warn',
+    {
+      peerDependencies: true,
+      devDependencies: [
+        '**/*.test.js',
+        '**/*.test.jsx',
+        '**/*.test.tsx',
+        '**/*.test.ts',
+        '**/*.stories.js',
+        '**/*.stories.jsx',
+        '**/*.stories.tsx',
+        '**/*.stories.ts',
+      ],
+      packageDir: [
+        __dirname,
+        path.join(process.cwd(), __dirname),
+        path.join(process.cwd(), __dirname, 'packages'),
+      ],
+    },
+  ],
 };
