@@ -31,4 +31,5 @@ exports.react = {
   'react/state-in-constructor': ['warn', 'never'],
 
   'react/function-component-definition': 'off',
+  'react/require-default-props': 'off',
 };

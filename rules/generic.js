@@ -105,6 +105,7 @@ exports.generic = {
 };
 
 exports.typescriptGenerics = {
+  'no-undef': 'off',
   'no-unused-vars': 0,
   '@typescript-eslint/no-unused-vars': [
     'warn',
