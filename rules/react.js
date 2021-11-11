@@ -29,4 +29,6 @@ exports.react = {
   'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.jsx'] }],
   'react/prop-types': 'off',
   'react/state-in-constructor': ['warn', 'never'],
+
+  'react/function-component-definition': 'off',
 };
