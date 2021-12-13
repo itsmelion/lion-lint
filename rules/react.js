@@ -1,6 +1,6 @@
 exports.react = {
   'react/jsx-pascal-case': 1,
-  'react/jsx-sort-props': 1,
+  'react/jsx-sort-props': 1, // Sort is great for conflict resolution and is auto-fixable
   'react/jsx-no-useless-fragment': 2,
   'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
   'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
