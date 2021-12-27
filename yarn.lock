@@ -549,9 +549,9 @@ __metadata:
   linkType: hard
 
 "core-js-pure@npm:^3.19.0":
-  version: 3.20.0
-  resolution: "core-js-pure@npm:3.20.0"
-  checksum: b5ae6601536104cad63bb91100477d9718442d348ac47dad22a60e22bd9c86ffe10ef5ea23ddaabb97a1492727e4f2bd4bb8848031271d5d1b2f31c860b4b362
+  version: 3.20.1
+  resolution: "core-js-pure@npm:3.20.1"
+  checksum: b985feaf1c7399a9966fc20b8b94e0e98f29ded1b476a6fd4634225fd19953e9c489b49c8e0f2f849fffa7f89ec6bf387c64816805a7d70242ec658c6a834939
   languageName: node
   linkType: hard
 
@@ -2211,13 +2211,13 @@ __metadata:
   linkType: hard
 
 "prop-types@npm:^15.7.2":
-  version: 15.7.2
-  resolution: "prop-types@npm:15.7.2"
+  version: 15.8.0
+  resolution: "prop-types@npm:15.8.0"
   dependencies:
     loose-envify: ^1.4.0
     object-assign: ^4.1.1
-    react-is: ^16.8.1
-  checksum: 5eef82fdda64252c7e75aa5c8cc28a24bbdece0f540adb60ce67c205cf978a5bd56b83e4f269f91c6e4dcfd80b36f2a2dec24d362e278913db2086ca9c6f9430
+    react-is: ^16.13.1
+  checksum: d8d51cf55d70cab207dd1e80df2dc093b8288a4519598a28d25d32d6e02319b2fd66712caa979040451656185f7393341185b0b081158520557aa4cbdcaa4b3a
   languageName: node
   linkType: hard
 
@@ -2235,7 +2235,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.8.1":
+"react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
