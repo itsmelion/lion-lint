@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lion",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "Lion reusable lint config",
   "main": "index.js",
   "type": "commonjs",
