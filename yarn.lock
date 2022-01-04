@@ -795,7 +795,6 @@ __metadata:
     eslint-config-airbnb-base: "*"
     eslint-config-promise: "*"
     eslint-config-react: 1.1.7
-    eslint-config-standard: "*"
     eslint-import-resolver-alias: 1.1.2
     eslint-plugin-import: 2.25.4
     eslint-plugin-jsx-a11y: 6.5.1
@@ -821,18 +820,6 @@ __metadata:
   version: 1.1.7
   resolution: "eslint-config-react@npm:1.1.7"
   checksum: 15d3d7f78e720c225ac983fb6985825b561941f1c930116c96f8ab8600eb65db603f5ef200a10fabd51f8ef564c107e8eb0d3f69609bfdedfb50290227249a70
-  languageName: node
-  linkType: hard
-
-"eslint-config-standard@npm:*":
-  version: 16.0.3
-  resolution: "eslint-config-standard@npm:16.0.3"
-  peerDependencies:
-    eslint: ^7.12.1
-    eslint-plugin-import: ^2.22.1
-    eslint-plugin-node: ^11.1.0
-    eslint-plugin-promise: ^4.2.1 || ^5.0.0
-  checksum: 6ae193634f289ae95dbbf2291dc1e7c5bedef2425c594db07ec58476c902e6eb51a2b1c9cd2bad3772e921f5515dc2f8fb5447f7a56c20c99801ef1296c3bfef
   languageName: node
   linkType: hard
 

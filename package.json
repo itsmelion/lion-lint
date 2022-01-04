@@ -20,7 +20,6 @@
     "eslint": "^8 || ^7.32.0",
     "eslint-config-airbnb-base": "*",
     "eslint-config-promise": "*",
-    "eslint-config-standard": "*",
     "eslint-import-resolver-alias": "*",
     "eslint-plugin-import": "*",
     "eslint-plugin-node": "*",

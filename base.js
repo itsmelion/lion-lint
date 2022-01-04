@@ -1,11 +1,10 @@
 const {
-  generic, promises, imports, react, whitespace,
+  generic, promises, imports, whitespace,
 } = require('./rules');
 
 exports.reportUnusedDisableDirectives = true;
 
 exports.extends = [
-  'standard',
   'eslint:recommended',
   'airbnb-base',
   'airbnb-base/whitespace',
