@@ -15,6 +15,8 @@
     "lint:ci": "eslint ./**/*.{js,jsx,ts,tsx}"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "5.9.0",
+    "@typescript-eslint/parser": "5.9.0",
     "eslint": "^8 || ^7.32.0",
     "eslint-config-airbnb-base": "*",
     "eslint-config-promise": "*",
@@ -25,8 +27,6 @@
     "eslint-plugin-promise": "*"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "5.9.0",
-    "@typescript-eslint/parser": "5.9.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-react": "1.1.7",
     "eslint-import-resolver-alias": "1.1.2",
@@ -37,35 +37,12 @@
     "eslint-plugin-react-hooks": "4.3.0",
     "typescript": "4.5.4"
   },
-  "typescriptDependencies": {
-    "@typescript-eslint/eslint-plugin": "*",
-    "@typescript-eslint/parser": "*"
-  },
   "reactDependencies": {
-    "@typescript-eslint/parser": "*",
-    "@typescript-eslint/eslint-plugin": "*",
     "eslint-plugin-jsx-a11y": ">=3.0.0",
     "eslint-plugin-react": ">=7.20.5",
     "eslint-plugin-react-hooks": ">=1.0.0",
     "eslint-config-airbnb": ">=17.0.0",
     "eslint-config-react": ">=1.1.7"
-  },
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release ${version}",
-      "tagName": "v${version}"
-    },
-    "npm": {
-      "publish": true
-    },
-    "github": {
-      "release": true
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": "angular"
-      }
-    }
   },
   "repository": "https://github.com/itsmelion/lion-lint.git",
   "author": {
