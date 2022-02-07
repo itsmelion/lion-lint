@@ -15,8 +15,8 @@
     "lint:ci": "eslint ./**/*.{js,jsx,ts,tsx}"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "5.10.2",
-    "@typescript-eslint/parser": "5.10.2",
+    "@typescript-eslint/eslint-plugin": "5.11.0",
+    "@typescript-eslint/parser": "5.11.0",
     "eslint": "^8 || ^7.32.0",
     "eslint-config-airbnb-base": "*",
     "eslint-config-promise": "*",
