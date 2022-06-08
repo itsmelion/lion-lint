@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lion",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "description": "Lion reusable lint config",
   "main": "index.js",
   "type": "commonjs",
@@ -47,7 +47,7 @@
   "author": {
     "name": "Christhopher Lion",
     "email": "itsmelion@icloud.com",
-    "url": "https://lion.alia.ml/"
+    "url": "https://lion-portfolio.netlify.app/"
   },
   "packageManager": "yarn@3.2.1"
 }
