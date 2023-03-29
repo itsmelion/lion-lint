@@ -6,7 +6,7 @@
   "type": "commonjs",
   "license": "MIT",
   "engines": {
-    "node": ">=8.3.0"
+    "node": ">=14"
   },
   "scripts": {
     "prerelease": "yarn publish --prerelease --tag=next",
